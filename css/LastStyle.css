@@ -1,0 +1,89 @@
+      body{
+        font-family: "El Messiri", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+      }
+      .navHeaderFontStyle{
+        font-family: "El Messiri", serif;
+        /*font-family: "Reem Kufi", serif;*/
+        font-optical-sizing:larger;
+        font-style:normal;
+      }
+      .navbarEdit{
+        background-color:#353535!important;
+        color:#fff;
+        }
+        .ListManu p{
+          font-weight: 400;
+          font-size: large;
+        }
+        .ListManu , .ListManu a{
+          direction: rtl;
+          text-decoration: none;
+        }
+        .offcanavasEdit{
+            --bs-border-width: 45px;
+        }
+        .bar a{
+            color:black;
+        }
+        .editNavbar {
+            direction: rtl;
+        }
+        .offcanvas{
+            --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+            --bs-offcanvas-border-color: rgb(255 255 255 / 0%);
+        }
+        .offcanvas-header{
+        background-color:#353535!important;
+        color: #fff;
+        }
+        .btn-close{
+        background-color:#fff!important;
+        color: #fff!important;
+        border-radius:20%;
+        }
+        .editH6{       
+          border-bottom: 1px solid;
+          border-color: #777;
+          padding: 10px;
+          width: 100%;
+        }
+        .disabledCat{
+          color: rgba(0, 0, 0, 0.425);
+          border-bottom: 1px solid;
+          padding: 10px;
+          width: 100%;
+        }
+        .detailsMainList{
+          margin: 20px;
+          font-weight: 500;
+        }
+        .detailsMainList a{
+          color: black;
+          font-weight: 400;
+        }
+        .MainEditList{
+          list-style: none;
+        }
+        .ListStyle{
+          list-style: circle;
+        }
+        .ulMainManue{
+            margin: 5px;
+            padding: 15px;
+        }
+        .ulMainManue li{
+          margin: 5px;
+          padding: 2px;
+        }
+        .ulMainManue{
+          list-style: none;
+        }
+        .textPragraph{
+          visibility: visible;
+          direction: rtl;          
+          padding: 10px;
+          margin: 1%;
+        }
