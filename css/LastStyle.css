@@ -103,10 +103,10 @@
           margin-top: 30px;
           font-weight: bold;
         }
-        .btn-secondary{
+        .btn-secondary, .btn-secondary a{
           background-color: #353535;
-        }
-        .tableLink a{
           text-decoration:none!important;
           color: #fff!important;
+        }
+        .tableLink a{
         }
