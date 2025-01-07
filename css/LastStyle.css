@@ -87,3 +87,19 @@
           padding: 10px;
           margin: 1%;
         }
+        .table{
+          direction: rtl;
+
+        }
+        .tableEdit{
+          font-weight: 500;
+          caption-side: bottom;
+          border-collapse: collapse;
+      }
+        .headerCatygoryName{
+          direction: rtl;
+          padding: 10px;
+          margin: 1%;
+          margin-top: 30px;
+          font-weight: 500;
+        }
