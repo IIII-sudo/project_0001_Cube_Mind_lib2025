@@ -95,6 +95,7 @@
           font-weight: 500!important;
           caption-side: bottom!important;
           border-collapse: collapse!important;
+          padding: 15px;
       }
         .headerCatygoryName{
           direction: rtl;
