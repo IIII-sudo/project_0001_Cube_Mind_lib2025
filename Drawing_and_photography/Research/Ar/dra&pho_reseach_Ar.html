@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="css/LastStyle.css" rel="stylesheet">
-    <script src="js/LastJs.js"></script>
-    <script src="js/fontAwesome.js"></script>
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../../../css/LastStyle.css" rel="stylesheet">
+    <script src="../../../js/LastJs.js"></script>
+    <script src="../../../js/fontAwesome.js"></script>
+    <script src="../../../js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbarEdit fixed-top bg-body-tertiary editNavbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand">
             <h4 class="navbarEdit navHeaderFontStyle">موسوعة الفن التشكيلي</h4>
           </a>
         </div>
@@ -27,61 +27,330 @@
       <br>
       <ul dir="rtl" class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html"><h6>الصفحة الرئيسية</h6></a>
+          <a class="nav-link active" aria-current="page" href="../../../index.html"><h6>الصفحة الرئيسية</h6></a>
         </li>
         <li class="nav-item bar">
           <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <h6>الأرشيف</h6>
           </a>
         </li>
-        <!--<li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>-->
       </ul>
-      <div class="alert alert-light textPragraph" role="alert">
-        <p>
-          <h4><strong>&#9668; ترحيب:</strong></h4>موسوعة الفن التشكيلي ترحب بجميع الزائرين، المختصين و المهتمين بالتزود
-        و الإستنارة المعرفية ضمن مجال الفنون التشكيلية، حيث تتضمن الموسوعة ما يعرف الارشيف ويقسم إلى ثلاث:
-      <br><br><strong>&#9666;الأرشيف النظري:</strong><br> يضم قوائم متخصصة بالفنون التشكيلية أهمها الإختصاصات التي يقدم من خلالها الفن التشكيلي للمتلقي، إضافة 
-    إلى التقنيات و التي تعد القاعدة و الركيزة الأساسية لكل فرد طامح بتطوير قدراته و صقل جوهر المعرفة وصقل 
-  جوهر المعرفة وصولاً إلى قسم الفكر و الذي يتضمن الأساس الفلسفي و النقدي الذي تطور من خلاله مفهوم التشكيل عبر العصور، 
-إنتهاء بالمتفرقات التي جمعت فيها مقالات و مجلات متفرقة تخص التشكيل على وجه الخصوص.
-      <br><br><strong>&#9666; الأرشيف البصري:</strong> ويضم الصيغة البصرية الرقمية للفن التشكيلي بصورة عامة، نخص بالذكر منها:صور رقمية لأعمال الفنانين،
-      رسائل و مقتنيات تاريخية تساعد الباحث و المختصين في إيصال و ترسيخ الفكر التشكيلي.
-      <br><br><strong>&#9666; الأرشيف البصري السمعي:</strong> ويضم الصيغة البصرية السمعية الرقمية للفن التشكيلي بصورة عامة و هي الصيغ الفيديو الرقمية و غيرها
-      من ذات الصنف التي تضفي فهم أعمق و أكثر إيضاح لإيصال الأفكار و الفلسفات المختلفة للفن التشكيلي..
 
-    </p>  
-      </div>
-      <div class="alert alert-light textPragraph" role="alert">
-        <p>
-          <h4><strong>&#9668; إخلاء مسؤولية:</strong></h4><br> لقد جمعت هنا روابط لبعض الكتب التاريخية والفنية المجانية المفضلة
-           والمثيرة للاهتمام، وكتيبات الفنانين والأعمال المرجعية للفنانين،
-            العديد من هذه الكتب في المجال العام، ولكن هناك أيضًا
-            العديد من الأعمال التي لا تزال خاضعة لحقوق الطبع والنشر وهي ملك لأصحاب حقوق الطبع
-            والنشر، فقط لأن المؤلف سمح لك بمشاهدة عمله مجانًا، فهذا لا يعني أنه يتنازل تلقائيًا
-            عن حقوق الطبع والنشر الخاصة به، فأنت لا تزال ملزمًا بقانون حقوق الطبع والنشر،
-          وبذلك فإن تضمين رابط إلى كتاب إلكتروني أو كتاب أو مجلة أو رسالة أو أطروحة أو مواقع ويب أو أي
-          عمل آخر على هذه الصفحة لا يشير إلى أنه في المجال العام، ولا يعني
-            ضمناً إعطاء الإذن لأي شخص باستخدام هذه الأعمال لأي
-            غرض آخر غير ما يسمح به صاحب حقوق الطبع والنشر.<br><br> يقع على عاتق الزائرين الكرام مسؤولية تحديد حالة حقوق الطبع 
-          والنشر لأي ملف أو رابط هنا والاتصال بمالك حقوق الطبع والنشر إذا كان هنالك فعل يخالف 
-          عرض وقراءة هذه المنشورات، حيث أن كل هذه الأعمال قانونية للعرض وفي بعض
-            الحالات يمكن تنزيلها للاستخدام الشخصي، ولكن لا تفترض أنه يمكن إعادة تجميع أي من هذه الأعمال
-            أو إضافتها إلى مجموعة أو بيعها أو استخدامها لتحقيق الربح. جميع الأعمال المحمية بحقوق
-            الطبع والنشر المرتبطة بهذه الصفحة، إما يتم استخدامها بإذن، أو إصدارها بموجب ترخيص عام و
-          /أو تم توفير رابط فقط يأخذك إلى موقع حاملي حقوق الطبع والنشر حيث يمكنك قراءة شروط حقوق
-            الطبع والنشر الخاصة بهم.<br> <br> 
-            في جميع الحالات، الزائرين ملزمين بقانون حقوق الطبع والنشر، جميع
-              الكتب الإلكترونية والكتب والمجلات والملفات الأخرى والروابط ومواقع الويب المدرجة هنا مخصصة
-              لاستخدام الشخصي فقط، وأي استخدام آخر قد يشكل جريمة أو انتهاكًا لحقوق الطبع والنشر.
-              <br>
+      <!--القسم-->
+      <div class="headerCatygoryName">
+        <p>  
+            <a style="text-decoration: none;color: #000;" href="../../../index.html">
+                | الأرشف النظري |
+            </a>
+            <a style="text-decoration: none;color: #000;" href="../About/dra&pho_cat.html">
+                 الإختصاصات |
+            </a>
+            <a style="text-decoration: none;color: #000;" href="../../Books/About/dra&pho_Mean.html"> 
+                الرسم و التصوير |
+            </a>
+            <a style="text-decoration: none;color: #000;" href="../About/dra&pho_aboutResearch.html">
+                 أبحاث |
+            </a style="text-decoration: none;color: #000;">
+            <a style="text-decoration: none;color: #000;" href="dra&pho_reseach_Ar.html"> 
+                اللغة العربية :
+            </a>
         </p>
       </div>
-<!--القائمة الرئيسية-->
+      <div class="alert alert-light textPragraph" role="alert">
+        <p>
+           عن المحتوى: جميع الأبحاث الواردة في الجدول أدناه كتبت باللغة العربية أو ترجمت عن كتب أجنبية من قبل مختصين، بهدف ترسيخ و نشر العلم في مجالات الفنون التشكيلية كافة و خاصة إختصاص الرسم و التصوير.
+        </p>
+      </div>
+      <br>
+      <!--الجداول-->
+      <div class="tableEdit">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">الترقيم</th>
+              <th scope="col">العنوان</th>
+              <th scope="col">الرابط</th>
+            </tr>
+          </thead>
+          <tbody>
+  
+            <tr>
+              <th scope="row">01</th>
+              <td>مدارس الفن التشكيلي</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/VO0XkTAR#r7zkch-FYWyRbQUAmNa5-sM0OZPr4cLennhlOqUslt4" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">02</th>
+              <td>تفاعلات التعبير الفني بين التصوير الفوتوغرافي و الفن المعاصر</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/xOMHEbiY#g_OHJ7kHGis4VnSLkM-a9H5GuA_Nb093bUK6py-IyjY" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">03</th>
+              <td>تقنيات الرسم بالألوان الزيتية</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/YSdC2a7S#g7J1bd3RwsS6tzq_5Q7MoaJ6Z9ds_KeBjBiVygwRtdU" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">04</th>
+              <td>التصوير الزيتي</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/Ya9z1Z6R#gFpxQ8GhZnd1EWIq4rkbOIvFdRSWlJXTodGyyPigUEw" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">05</th>
+              <td>فن التصوير</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/ITdyTTaB#TvoOFVI-4ndvXooyMIzgN1MLMnl64YEzcsbuHNB46c0" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">06</th>
+              <td>البصمة و دورها في إحياء الفن التشكيلي</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/wSs2lCoD#M987T000Ksc7NbyI8eUwa3B8D3SQvVuXYIkTImxIYRw" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">07</th>
+              <td>فن التصوير في العصر الروماني</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/NedXETLC#iRVAjkGhvN_5HLlmFywSW61SF81yinn11CKe7zS9wsk" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">08</th>
+              <td>الشكل و المضمون في الحضارة الإسلامية و أثرهما على فنون التصوير المعاصر</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/cKUyDb6K#qyN9AoLWAla81ZCn8JpSAtsQ8JH5OXw3fPjLgEwi5nc" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+
+            <tr>
+              <th scope="row">09</th>
+              <td>المفاهيم الفنية و الفلسفية لفن الواقعية العليا كمصدر لإثراء التصوير السعودي المعاصر</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/8fUnWIqK#RkUqrbaSq4AOKFW_O3lEOCG4euontZjox_4D2pEBVUo" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">10</th>
+              <td>الواقعية المفرطة عند الفنان الليبي عبد الرزاق الرياين</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/AXUBHbKD#IZtp0pApbKapv0WrAW245PxvFMXkqS_T6-7tTuK4Juk" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">11</th>
+              <td>تغيرات البعد الثالث في الفن السوري المعاصر</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/kPkETRhC#e6BGRz3_W-LInxTf79pce3D1iZJBEeFgizp-_VfubOI" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr> 
+            
+            <tr>
+              <th scope="row">12</th>
+              <td>صورة المرأة الجزائرية في لوحات الفنان الأمريكي المستشرق فريدريك أرثر بريدجمان</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/9SF2mRJY#IoW4rOaFgOdhxPQ4bTlLXcKs6hHs6TIp_gVf63cYxGs" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">13</th>
+              <td>الأبعاد الفكرية و التكنولوجية للواقع الإفتراضي و فعاليته في الرسم و التصوير</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/UGNDxRqa#1703jg7jyUek0tlQUBNQfM7Z9YnZ8M0qYutpXEVqz7k" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">14</th>
+              <td>تحليل الرموز التشكيلية في الممكلة العربية السعودية كمنطلق تجريبي لإبداع رؤية معاصرة في التصوير</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/cWkRQCzb#mXDkQA_sKYnt-NL9OGRaAw8olA7ADu5x1h7ySjUxXe4" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">15</th>
+              <td>التأخر الفني في الفن العراقي المعاصر</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/EflTDD6S#c-4pEf40XTt4A0la4ovpB3D08cpXW1K9xnDegksvkCs" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">16</th>
+              <td>خصائص فن التصوير</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/IC0yATbR#-yqeg9T3iz4Q4JRz2-ox8HOV1n_azI3gDhhHyfzL43c" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">17</th>
+              <td>طابع الفن المصري</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/4PNUDBrb#c4Ke_Rau-hVvzp5iQd698GsmqA_vXWLdcBNLg8MGHtY" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">18</th>
+              <td>المدرسة التجريدية الهندسية لإثراء مجال التصوير التشكيلي السعودي</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/leFwiDYD#gEu3hnPGVjbmcpInr4DSMoy2cNJxWA7uWzGVCvVZcFU" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">19</th>
+              <td>تصنيفات الفن</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/ICNkXZiY#FivHjtq7xOXYSqwAaIeHW7OqJIo3P36v4Txzqpp2aFg" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">20</th>
+              <td>مظاهر التلف في اللوحة التشكيلية لإستلهام لوحات تصويرية</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/RCNEDR7Z#wusDt-wtqIVnAJW8e0gz6sJDqyE37K-U7miDuqs8nF8" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">21</th>
+              <td>الطبيعة المعاصرة في الفن المصري المعاصر</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/EDt1iQpD#7dtcwmBHAX5xxVaNJUOY2v0bJQiqUJUy5JZBZI0QLeI" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">22</th>
+              <td>جماليات الضوء في تصوير مناظر المدينة</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/9TFFiBzL#bEcwyVILCuHv3EvuYHv-YuN-1BUBMjsjjAt5T_7qO7k" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">23</th>
+              <td>الفن التشكيلي في اللاذقية الفنان علي مقوص أنموذجا</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/ZWtwiISL#00ouEtTdDJK6OqcCuBXOEQ5FpjaaeGSMzHG93khD9KY" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">24</th>
+              <td>التنوع التقني في رسومات الفنانين العراقيين</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/5a0nmbTL#-rAEcs0PgnlUePI1iX89AqGIKI6awZUzciH8hjbRgpQ" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">25</th>
+              <td>الإستفادة من تكنولوجيا الخامات و المواد الحديثة في ثقافة بناء اللوحة الفنية عند الفنان التشكيلي العربي</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/dWN2GAaS#BJ8l5u8Bts5YkwDdGMcJ_JsVlrXx8aZglHvDPO6tR6Y" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">26</th>
+              <td>جداريات قصير عمرة و موقف الإسلام من التصوير</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/VLlB1JQB#Z4G2Q1Ain7fbJvn5TXG_8DiQ5hS0yD5j-0QUiwDSzAA" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">27</th>
+              <td>اعادة التدوير كمدخل لفن الرسوم الظليلة في الرسم و التصوير المعاصر</td>
+              <td>
+                <button type="button" class="btn  btn-sm btn-secondary">
+                  <a class="tableLink" href="https://mega.nz/file/QLNBkZjY#lhsvZ8LZvoVudccndJJEfqZWxfT5MR621pxfLr9h9AI" target="_blank">تحميل</a>
+                </button>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+  
+      </div>
+
+      <!--القائمة الرئيسية-->
     <div class="offcanvas offcanvas-start offcanavasEdit" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">القائمة الرئيسية</h4>
@@ -103,9 +372,9 @@
                                   <summary>كتب</summary>
                                   <ul>
                                     <li>
-                                      <a href="Drawing_and_photography/Books/Ar/dra&pho_books_Ar.html" id="Dra&PhoAr">العربية</a>
+                                      <a href="../../Books/Ar/dra&pho_books_Ar.html">العربية</a>
                                     </li>
-                                    <li><a href="Drawing_and_photography/Books/En/dra&pho_books_En.html">الإنكليزية</a></li>
+                                    <li><a href="../../Books/En/dra&pho_books_En.html">الإنكليزية</a></li>
                                   </ul>
                                 </details>
                               </li>
@@ -113,8 +382,7 @@
                                 <details>
                                   <summary>أبحاث</summary>
                                   <ul>
-                                    <li><a href="Drawing_and_photography/Research/Ar/dra&pho_reseach_Ar.html">العربية</a></li>
-                                    <li><a href="#">الإنكليزية</a></li>
+                                    <li><a href="dra&pho_reseach_Ar.html">العربية</a></li>
                                   </ul>
                                 </details>
                               </li>

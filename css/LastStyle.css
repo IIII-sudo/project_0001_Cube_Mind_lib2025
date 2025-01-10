@@ -103,6 +103,10 @@
           margin: 1%;
           margin-top: 30px;
           font-weight: bold;
+          text-decoration: none!important;
+        }
+        .headerCatygoryName> p{
+          text-decoration: none!important;
         }
         .btn-secondary{
           background-color: #353535;
