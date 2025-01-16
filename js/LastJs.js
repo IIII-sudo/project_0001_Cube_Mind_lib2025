@@ -46,4 +46,6 @@ function setNight(){
 function setLight(){
   nightMood.style.display="block";
   lightMood.style.display="none";
+  setNightMood.style.color="#353535";
+  setNightMood.style.background="#fff";
 }
