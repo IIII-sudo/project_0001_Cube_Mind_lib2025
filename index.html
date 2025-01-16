@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/LastStyle.css" rel="stylesheet">
-    <script src="js/LastJs.js"></script>
     <script src="js/fontAwesome.js"></script>
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +14,10 @@
 
     <title>موسوعة الفن التشكيلي</title>
 </head>
-<body>
+<body id="setNightMood">
   
 
-    <nav class="navbar navbarEdit fixed-top bg-body-tertiary editNavbar">
+    <nav class="navbar navbarEdit fixed-top bg-body-tertiary editNavbar" id="setNightMood">
         <div class="container-fluid">
           <a class="navbar-brand">
             <h4 class="navbarEdit navHeaderFontStyle">موسوعة الفن التشكيلي</h4>
@@ -43,7 +42,7 @@
           </a>
         </li>
       </ul>
-      <div class="alert alert-light textPragraph" role="alert">
+      <div class="alert alert-light textPragraph" role="alert" id="setNightMood">
         <p>
           <h4><strong>&#9668; ترحيب:</strong></h4>موسوعة الفن التشكيلي ترحب بجميع الزائرين، المختصين و المهتمين بالتزود
         و الإستنارة المعرفية ضمن مجال الفنون التشكيلية، حيث تتضمن الموسوعة ما يعرف الارشيف ويقسم إلى ثلاث:
@@ -58,7 +57,7 @@
 
     </p>  
       </div>
-      <div class="alert alert-light textPragraph" role="alert">
+      <div class="alert alert-light textPragraph" role="alert" id="setNightMood">
         <p>
           <h4><strong>&#9668; إخلاء مسؤولية:</strong></h4> لقد جمعت هنا روابط لبعض الكتب التاريخية والفنية المجانية المفضلة
            والمثيرة للاهتمام، وكتيبات الفنانين والأعمال المرجعية للفنانين،
@@ -94,23 +93,29 @@
       <div class="modal-body">
         <ul>
           <li>
-            <p>الصوت:</p>
-            <audio autoplay controls loop><source src="ogg/Beethoven-MoonlightSonata.ogg" type="audio/ogg"></audio>
+            <p>&#9666; الصوت - (تشغيل/إيقاف):</p>
+            <button class="btn btn-secondary" id="setPause" onclick="setPlayBK()">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="btn btn-secondary" id="setPlay" onclick="setPauseBK()">
+               <i class="fa-solid fa-pause"></i>
+            </button>
+            <audio id="audioBk" loop><source src="ogg/Beethoven-MoonlightSonata.ogg" type="audio/ogg"></audio>
 
           </li>
-          <li>الوضع</li>
-          <li class="nav-item align-items-center d-flex" >
-            <i class="fas fa-sun"></i>
-            <!-- Default switch -->
-            <div class="ms-2 form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="themingSwitcher" />
-            </div>
-            <i class="fas fa-moon"></i>
-          </li>
+          <p>&#9666; الوضع - (نهاري/ليلي):</p>
+            <li>
+              <button class="btn btn-secondary" id="setNight" onclick="setNight()">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <button class="btn btn-secondary" id="setLight" onclick="setLight()">
+                <i class="fa-solid fa-sun"></i>
+              </button>
+            </li>
         </ul>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">حفظ</button>
+        <button type="button" class="btn btn-secondary EditSave" data-bs-dismiss="modal">حفظ</button>
       </div>
     </div>
   </div>
@@ -606,6 +611,6 @@
             </div>
         </div>
       </div>
-    
+      <script src="js/LastJs.js"></script>
 </body>
 </html>

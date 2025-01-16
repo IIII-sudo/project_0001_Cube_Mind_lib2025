@@ -1,49 +1,49 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn")
+// معرف زر السحاب
+let mybutton = document.getElementById("myBtn");
+//معرفات ضبط واجهة الإعدادات 
+let setPause = document.getElementById("setPause");
+let setPlay = document.getElementById("setPlay");
+let audioBk = document.getElementById("audioBk");
+let nightMood = document.getElementById("setNight");
+let lightMood = document.getElementById("setLight");
+let body = document.getElementById("getBody");
+let setNightMood = document.getElementById("setNightMood")
 
-// When the user scrolls down 20px from the top of the document, show the button
+//الأكواد البرمجية و الوظائف
+// برمجة زر السحاب
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
-let mybutton = document.getElementById("myBtn")
-
   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
-}
-
-// When the user clicks on the button, scroll to the top of the document
+};
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+//برمجة قائمة الإعدادات
+function setPlayBK(){
+  setPause.style.display="none";
+  setPlay.style.display="block";
+  audioBk.play();
+};
+function setPauseBK(){
+  setPause.style.display="block";
+  setPlay.style.display="none";
+  audioBk.pause();
 }
 
-
-const themeStitcher = document.getElementById("themingSwitcher");
-const isSystemThemeSetToDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-// set toggler position based on system theme
-if (isSystemThemeSetToDark) {
-  themeStitcher.checked = true;
+//الوضع الليلي
+function setNight(){
+  nightMood.style.display="none";
+  lightMood.style.display="block";
+  setNightMood.style.color="#fff";
+  setNightMood.style.background="#353535";
 }
-
-// add listener to theme toggler
-themeStitcher.addEventListener("change", (e) => {
-  toggleTheme(e.target.checked);
-});
-
-const toggleTheme = (isChecked) => {
-  const theme = isChecked ? "dark" : "light";
-
-  document.documentElement.dataset.mdbTheme = theme;
+// الوضع النهاري
+function setLight(){
+  nightMood.style.display="block";
+  lightMood.style.display="none";
 }
-
-// add listener to toggle theme with Shift + D
-document.addEventListener("keydown", (e) => {
-  if (e.shiftKey && e.key === "D") {
-    themeStitcher.checked = !themeStitcher.checked;
-    toggleTheme(themeStitcher.checked);
-  }
-});

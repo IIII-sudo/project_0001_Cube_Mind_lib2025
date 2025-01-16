@@ -137,9 +137,41 @@
       }
       .modal{
         direction: rtl;
-        margin-top:20%;
+        margin-top:10%;
       }
       .modal-header{
         background-color: #353535;
         color: #fff;
+      }
+      .modal-body> ul> li{
+        list-style: none;
+        margin: 20px;
+      }
+      #setPause{
+        display: block;
+        width: 100%;
+        font-size: large;
+        padding-top:10px ;
+
+      }
+      #setPlay{
+        display: none;
+        width: 100%;
+        font-size: large;
+        padding-top:10px ;
+      }
+      #setNight{
+        display: block;
+        width: 100%;
+        font-size: large;
+        padding-top:10px ;
+      }
+      #setLight{
+        display: none;
+        width: 100%;
+        font-size: large;
+        padding-top:10px ;
+      }
+      .EditSave{
+        width: 100%;
       }
