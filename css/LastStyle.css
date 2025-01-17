@@ -1,7 +1,6 @@
       body{
         font-family: "El Messiri", serif;
         font-optical-sizing: auto;
-        font-weight: bold;
         font-style: normal;
       }
       .navHeaderFontStyle{
@@ -14,6 +13,7 @@
         background-color:#353535!important;
         color:#fff;
         }
+    
         .ListManu p{
           font-weight: 400;
           font-size: large;
@@ -28,7 +28,7 @@
         .bar a{
             color:black;
         }
-        .editNavbar {
+        .editNavbar{
             direction: rtl;
         }
         .offcanvas{
@@ -119,8 +119,8 @@
           padding-top: 6px;
           display: none;
           position: fixed;
-          bottom: 20px;
-          left: 30px;
+          bottom: 100px;
+          left: 5px;
           z-index: 99;
           border: none;
           outline: none;
@@ -133,7 +133,7 @@
         }
         
       .topBtn{
-        margin-top: 20%;
+        margin-top: 5%;
       }
       .modal{
         direction: rtl;
@@ -175,3 +175,75 @@
       .EditSave{
         width: 100%;
       }
+      .iconsFooter> i, .iconsFooter> a{
+        color: #fff;
+        padding: 7px;
+        font-size: x-large;
+        text-decoration: none;
+      }
+      .iconsFooter{
+        border-bottom: #fff solid 1px;
+        border-top: #fff solid 1px;
+        margin: 5px;
+        padding-top: 5px;
+      }
+      .footerEdit, .footerHeaderFontStyle{
+        background-color:#353535!important;
+        color:#fff;          
+        font-size: 15px;
+        direction: rtl;
+        text-align: center;
+        padding: 5px;
+
+      }
+      .hLine{
+        border-bottom: 2px solid #3535;
+      }
+      .alert{
+        border: solid 2px #3535;
+      }
+      .mainArFooter{
+        direction: rtl;
+        text-decoration: none;
+        list-style: none;
+        border-bottom: #fff solid 1px;
+        border-top: #fff solid 1px;
+        width: 100%;
+        margin-top: 5px;
+        padding: 15px;
+      }
+      .mainArFooter> a{
+        text-decoration: none;
+        color: #fff;
+      }
+      /*
+      
+      .toast{
+        width: 50%;
+        direction: rtl;
+        position: fixed;
+        z-index: 99;
+        width: auto;
+        left: 5%;
+        top: 15%;
+        background-color: #35353554;
+      }
+      .toast-header{
+        width: 50%;
+
+        background-color: #35353571;
+        color: #fff;
+      padding: 20px;
+
+      }
+      .btn-close{
+        padding: 5px;
+        color: #fff;
+      }
+      .toastP{
+        padding: 20px;
+        width: 50%;
+
+      }
+      
+      */

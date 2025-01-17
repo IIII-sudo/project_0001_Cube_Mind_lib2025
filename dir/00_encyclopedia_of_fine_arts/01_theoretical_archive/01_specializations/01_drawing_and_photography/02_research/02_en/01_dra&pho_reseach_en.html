@@ -34,6 +34,11 @@
             <h6>الأرشيف</h6>
           </a>
         </li>
+        <li class="nav-item bar">
+          <a class="nav-link" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <h6>إعدادات</h6>
+          </a>
+        </li>
       </ul>
        <!--القسم-->
        <div class="headerCatygoryName">
@@ -89,6 +94,45 @@
         </table>
   
       </div>
+      
+<!-- المودال -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title fs-5" id="exampleModalLabel"><strong>&#9668; الإعدادات:</strong></h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <p>&#9666; الصوت - (تشغيل/إيقاف):</p>
+            <button class="btn btn-secondary" id="setPause" onclick="setPlayBK()">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="btn btn-secondary" id="setPlay" onclick="setPauseBK()">
+               <i class="fa-solid fa-pause"></i>
+            </button>
+            <audio id="audioBk" loop><source src="ogg/Beethoven-MoonlightSonata.ogg" type="audio/ogg"></audio>
+
+          </li>
+          <p>&#9666; الوضع - (نهاري/ليلي):</p>
+            <li>
+              <button class="btn btn-secondary" id="setNight" onclick="setNight()">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <button class="btn btn-secondary" id="setLight" onclick="setLight()">
+                <i class="fa-solid fa-sun"></i>
+              </button>
+            </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary EditSave" data-bs-dismiss="modal">حفظ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
    <!--زر سحاب-->
    <div class="topBtn">
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-chevron-circle-up" aria-hidden="true"></button>

@@ -7,7 +7,7 @@ let audioBk = document.getElementById("audioBk");
 let nightMood = document.getElementById("setNight");
 let lightMood = document.getElementById("setLight");
 let body = document.getElementById("getBody");
-let setNightMood = document.getElementById("setNightMood")
+let setNightMood = document.getElementById("setNightMood");
 
 //الأكواد البرمجية و الوظائف
 // برمجة زر السحاب
@@ -49,3 +49,4 @@ function setLight(){
   setNightMood.style.color="#353535";
   setNightMood.style.background="#fff";
 }
+document.getElementById("year").innerHTML = new Date().getFullYear();
