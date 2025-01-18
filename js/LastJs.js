@@ -9,6 +9,7 @@ let lightMood = document.getElementById("setLight");
 let body = document.getElementById("getBody");
 let setNightMood = document.getElementById("setNightMood");
 
+
 //الأكواد البرمجية و الوظائف
 // برمجة زر السحاب
 window.onscroll = function() {scrollFunction()};
@@ -28,6 +29,7 @@ function setPlayBK(){
   setPause.style.display="none";
   setPlay.style.display="block";
   audioBk.play();
+  document.cookie = `audioBk=audioBk.play(); max-age=${12*30*24*60*60}; path=/`;
 };
 function setPauseBK(){
   setPause.style.display="block";
@@ -50,3 +52,5 @@ function setLight(){
   setNightMood.style.background="#fff";
 }
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
