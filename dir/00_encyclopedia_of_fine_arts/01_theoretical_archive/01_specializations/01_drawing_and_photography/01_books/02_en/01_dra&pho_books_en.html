@@ -6,6 +6,8 @@
     <link href="../../../../../../../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../../../../../../../css/LastStyle.css" rel="stylesheet">
     <script src="../../../../../../../js/fontAwesome.js"></script>
+    <script src="../../../../../../../js/jquery-1.12.1.min.js"></script>
+
     <script src="../../../../../../../js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -320,6 +322,57 @@
   
       </div>
       <br><br><br><br>
+      <!-- المودال -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title fs-5" id="exampleModalLabel"><strong>&#9668; الإعدادات:</strong></h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <p>&#9666; الصوت - (تشغيل/إيقاف):</p>
+            <button class="btn btn-secondary" id="setPause" onclick="setPlayBK()">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="btn btn-secondary" id="setPlay" onclick="setPauseBK()">
+               <i class="fa-solid fa-pause"></i>
+            </button>
+            <audio id="audioBk" loop><source src="../../../../../../../ogg/Beethoven-MoonlightSonata.ogg" type="audio/ogg"></audio>
+
+          </li>
+          <p>&#9666; الوضع - (نهاري/ليلي):</p>
+            <li>
+              <button class="btn btn-secondary" id="setNight" onclick="setNight()">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <button class="btn btn-secondary" id="setLight" onclick="setLight()">
+                <i class="fa-solid fa-sun"></i>
+              </button>
+            </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary EditSave" data-bs-dismiss="modal">حفظ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--المودال قائمة الإنتظار -->
+<div class="modal modal2 fade" id="exampleModal2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content2">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+      <h5 class="downloadTextUser">يرجى الإنتظار...</h5>
+      </div>
+    </div>
+  </div>
+</div>
    <!--زر سحاب-->
    <div class="topBtn">
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-chevron-circle-up" aria-hidden="true"></button>
