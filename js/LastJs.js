@@ -10,6 +10,40 @@ let body = document.getElementById("getBody");
 let setNightMood = document.getElementById("setNightMood");
 
 
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+      user = prompt("Please enter your name:", "");
+      if (user != "" && user != null) {
+        setCookie("username", user, 365);
+      }
+    }
+  }
+
 //الأكواد البرمجية و الوظائف
 // برمجة زر السحاب
 window.onscroll = function() {scrollFunction()};
@@ -29,12 +63,14 @@ function setPlayBK(){
   setPause.style.display="none";
   setPlay.style.display="block";
   audioBk.play();
-  document.cookie = `audioBk=audioBk.play(); max-age=${12*30*24*60*60}; path=/`;
+  document.cookie = `audio=play; max-age=${12*30*24*60*60}; path=/`;
 };
 function setPauseBK(){
   setPause.style.display="block";
   setPlay.style.display="none";
   audioBk.pause();
+  document.cookie = `audio=pause; max-age=${12*30*24*60*60}; path=/`;
+
 }
 
 //الوضع الليلي
@@ -51,6 +87,21 @@ function setLight(){
   setNightMood.style.color="#353535";
   setNightMood.style.background="#fff";
 }
+// السنة
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+window.onload = function checkCookie() {
+// window.location.reload(true);
 
+    let audioBk = document.getElementById("audioBk");
+    let musicValue = getCookie("audio");
+    if (musicValue == "play") {
+        setPause.style.display="none";
+        setPlay.style.display="block";
+        audioBk.play();
+    } else {
+     setPause.style.display="block";
+      setPlay.style.display="none";
+      audioBk.pause();
+      }
+  }
