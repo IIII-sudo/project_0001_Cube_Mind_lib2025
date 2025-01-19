@@ -8,6 +8,7 @@ let nightMood = document.getElementById("setNight");
 let lightMood = document.getElementById("setLight");
 let body = document.getElementById("getBody");
 let setNightMood = document.getElementById("setNightMood");
+let downloadModal = document.getElementById("exampleModal2");
 
 
 function setCookie(cname, cvalue, exdays) {
