@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../../../../../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../../../../../../../css/LastStyle.css" rel="stylesheet">
-    <script src="../../../../../../../js/LastJs.js"></script>
+    <script src="../../../../../../../js/jquery-1.12.1.min.js"></script>
     <script src="../../../../../../../js/fontAwesome.js"></script>
     <script src="../../../../../../../js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +62,8 @@
       </div>
       <div class="alert alert-light textPragraph" role="alert">
         <p>
-           عن المحتوى: جميع الكتب الواردة في الجدول أدناه كتبت باللغة الإنكليزية و لم تترجم إلى اللغة العربية إلى الأن،
+          <h5 class="hLine">&#9668; عن المحتوى:</h5>
+            جميع الكتب الواردة في الجدول أدناه كتبت باللغة الإنكليزية و لم تترجم إلى اللغة العربية إلى الأن،
             خصصنا ترجمة عنوان الكتاب عن لغته الأصلية كنوع من الإيضاح و المساعدة للزائرين في إنتقاء الكتاب المطلوب بسرعة.
         </p>
       </div>
@@ -77,21 +78,35 @@
               <th scope="col">الرابط</th>
             </tr>
           </thead>
-          <tbody><tr>
-            <th scope="row">---</th>
-            <td>---</td>
-            <td>
-              <button type="button" class="btn  btn-sm btn-secondary">
-                <a class="tableLink" href="#" target="_blank">تحميل</a>
-              </button>
-            </td>
-          </tr>
+          <tbody>
+              
+              <tr>
+                <th scope="row">---</th>
+                <td>---</td>
+                <td>
+                  <button type="button" class="btn  btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <a class="tableLink" onclick="setTimeout(function(url){window.open('','_blank');$('#exampleModal2').modal('hide')}, 5000);">تحميل</a>
+                  </button>
+                </td>
+              </tr>
           
           </tbody>
         </table>
   
       </div>
-      
+      <br><br><br><br><br>
+            <!--المودال قائمة الإنتظار -->
+<div class="modal modal2 fade" id="exampleModal2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content2">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+      <h5 class="downloadTextUser">يرجى الإنتظار...</h5>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- المودال -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -109,7 +124,7 @@
             <button class="btn btn-secondary" id="setPlay" onclick="setPauseBK()">
                <i class="fa-solid fa-pause"></i>
             </button>
-            <audio id="audioBk" loop><source src="ogg/Beethoven-MoonlightSonata.ogg" type="audio/ogg"></audio>
+            <audio id="audioBk" loop><source src="../../../../../../../ogg/Beethoven-MoonlightSonata.ogg" type="audio/ogg"></audio>
 
           </li>
           <p>&#9666; الوضع - (نهاري/ليلي):</p>
@@ -622,9 +637,55 @@
                   
                 </div>
             </div>
+        </div> <div class="offcanvas-header">
+          <ul class="mainArFooter">
+            <a href="#">
+              <li>&#9668; من نحن</li>
+            </a>
+            <a href="#">
+              <li>&#9668; حول الموسوعة</li>
+            </a>
+            <a href="#">
+              <li>&#9668; معلومات التواصل</li>
+            </a>
+          </ul>
         </div>
       </div>
-
- 
-</body>
-</html>
+      <footer class="footerEdit fixed-bottom bg-body-tertiary">
+        <div class="footerEdit">
+           <span id="year" onload="getFullYear"></span>  © جميع الحقوق محفوظة | موسوعة الفن التشكيلي
+        </div>
+        <div class="container-fluid">          
+      
+           <div class="iconsFooter">
+             <!-- Facebook -->
+              <a href="#">
+                <i class="fab fa-facebook-f" href="#"></i>
+              </a>
+      
+             <!-- Google -->
+              <a href="">
+                 <i class="fab fa-google"></i>
+              </a> 
+             <!-- Instagram -->
+                <a href="">
+                   <i class="fab fa-instagram"></i>
+                </a> 
+             <!-- Pinterest -->
+                <a href="">
+                   <i class="fab fa-pinterest"></i>
+                </a>
+             <!-- Youtube -->
+                <a href="">
+                   <i class="fab fa-youtube"></i>
+                </a> 
+             <!-- Whatsapp -->
+                <a href="">
+                  <i class="fab fa-whatsapp"></i>
+                </a>           
+          </div>
+      
+      </footer>
+      <script src="../../../../../../../js/LastJs.js"></script>
+      </body>
+      </html>

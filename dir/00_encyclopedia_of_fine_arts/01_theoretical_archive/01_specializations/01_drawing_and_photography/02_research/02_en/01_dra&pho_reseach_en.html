@@ -6,6 +6,7 @@
     <link href="../../../../../../../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../../../../../../../css/LastStyle.css" rel="stylesheet">
     <script src="../../../../../../../js/fontAwesome.js"></script>
+    <script src="../../../../../../../js/jquery-1.12.1.min.js"></script>
     <script src="../../../../../../../js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,11 +83,11 @@
           <tbody>
   
             <tr>
-              <th scope="row">---</th>
-              <td>---</td>
+              <th scope="row">...</th>
+              <td>...</td>
               <td>
-                <button type="button" class="btn  btn-sm btn-secondary">
-                  <a class="tableLink" href="#" target="_blank">تحميل</a>
+                <button type="button" class="btn  btn-sm btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  <a class="tableLink" onclick="setTimeout(function(url){window.open('','_blank');$('#exampleModal2').modal('hide')}, 5000);">تحميل</a>
                 </button>
               </td>
             </tr>
@@ -96,7 +97,18 @@
   
       </div>
       <br><br><br><br>
-      
+            <!--المودال قائمة الإنتظار -->
+<div class="modal modal2 fade" id="exampleModal2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content2">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+      <h5 class="downloadTextUser">يرجى الإنتظار...</h5>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- المودال -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -160,8 +172,8 @@
                             <details>
                               <summary>كتب</summary>
                               <ul>
-                                <li><a href="../01_ar/01_dra&pho_books_ar.html">العربية</a></li>
-                                <li><a href="../02_en/01_dra&pho_books_en.html">الإنكليزية</a></li>
+                                <li><a href="../../01_books/01_ar/01_dra&pho_books_ar.html">العربية</a></li>
+                                <li><a href="../../01_books/02_en/01_dra&pho_books_en.html">الإنكليزية</a></li>
                               </ul>
                             </details>
                           </li>

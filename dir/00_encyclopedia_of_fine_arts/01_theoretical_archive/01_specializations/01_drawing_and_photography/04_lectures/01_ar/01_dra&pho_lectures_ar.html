@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../../../../../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../../../../../../../css/LastStyle.css" rel="stylesheet">
+    <script src="../../../../../../../js/jquery-1.12.1.min.js"></script>
     <script src="../../../../../../../js/fontAwesome.js"></script>
     <script src="../../../../../../../js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,8 +92,8 @@
               <th scope="row">01</th>
               <td>الألوان الزيتية</td>
               <td>
-                <button type="button" class="btn  btn-sm btn-secondary">
-                  <a class="tableLink" href="https://mega.nz/file/0OlwXL4I#v_C_bcBCQds0MIZ3mm_LCRigBqguEZuC2T-j8esWcds" target="_blank">تحميل</a>
+                <button type="button" class="btn  btn-sm btn-secondary"    data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  <a class="tableLink" onclick="setTimeout(function(url){window.open('https://mega.nz/file/0OlwXL4I#v_C_bcBCQds0MIZ3mm_LCRigBqguEZuC2T-j8esWcds','_blank');$('#exampleModal2').modal('hide')}, 5000);">تحميل</a>
                 </button>
               </td>
             </tr>
@@ -101,8 +102,8 @@
               <th scope="row">02</th>
               <td>طريقة إستخدام الألوان الزيتية</td>
               <td>
-                <button type="button" class="btn  btn-sm btn-secondary">
-                  <a class="tableLink" href="https://mega.nz/file/cLsVyJpA#ytkzFO4D9Z88FnhkcizVhxSlTmDXqW9Kwgu7pXEb0Z0" target="_blank">تحميل</a>
+                <button type="button" class="btn  btn-sm btn-secondary"    data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  <a class="tableLink" onclick="setTimeout(function(url){window.open('https://mega.nz/file/cLsVyJpA#ytkzFO4D9Z88FnhkcizVhxSlTmDXqW9Kwgu7pXEb0Z0','_blank');$('#exampleModal2').modal('hide')}, 5000);">تحميل</a>
                 </button>
               </td>
             </tr>
@@ -111,8 +112,8 @@
               <th scope="row">03</th>
               <td>تقنيات الرسم بالألوان الزيتية</td>
               <td>
-                <button type="button" class="btn  btn-sm btn-secondary">
-                <a class="tableLink" href="https://mega.nz/file/BDUilRZK#kSM4AwRiCaBx6UAqLG-hVsnzdbQw0MWAGe8_BWcLlg4" target="_blank">تحميل</a>
+                <button type="button" class="btn  btn-sm btn-secondary"    data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <a class="tableLink" onclick="setTimeout(function(url){window.open('https://mega.nz/file/BDUilRZK#kSM4AwRiCaBx6UAqLG-hVsnzdbQw0MWAGe8_BWcLlg4','_blank');$('#exampleModal2').modal('hide')}, 5000);">تحميل</a>
               </button>
             </td>
             </tr>
@@ -122,6 +123,19 @@
   
       </div>
       <br><br><br><br>
+      
+            <!--المودال قائمة الإنتظار -->
+<div class="modal modal2 fade" id="exampleModal2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content2">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+      <h5 class="downloadTextUser">يرجى الإنتظار...</h5>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- المودال -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
