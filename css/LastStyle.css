@@ -234,7 +234,16 @@
       padding: 20px;
       display: flex;
       margin: 50px;
+      
     }
+    .modal-content{
+      background-color: #353535;
+      color: #fff;
+  }
+  .modal-content>.modal-body>ul>li>.btn-secondary,.modal-footer>.btn-secondary{
+    background-color: #fff!important;
+    color: #353535!important;
+  }
     .spinner-grow{
       padding: 20px;
       margin: 20px;

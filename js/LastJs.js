@@ -6,10 +6,9 @@ let setPlay = document.getElementById("setPlay");
 let audioBk = document.getElementById("audioBk");
 let nightMood = document.getElementById("setNight");
 let lightMood = document.getElementById("setLight");
-let body = document.getElementById("getBody");
+let body = document.getElementById("body");
 let setNightMood = document.getElementById("setNightMood");
 let downloadModal = document.getElementById("exampleModal2");
-
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -78,15 +77,17 @@ function setPauseBK(){
 function setNight(){
   nightMood.style.display="none";
   lightMood.style.display="block";
-  setNightMood.style.color="#fff";
-  setNightMood.style.background="#353535";
+  body.style.color="#fff";
+  body.style.background="#353535";
+  document.cookie = `theme=night; max-age=${12*30*24*60*60}; path=/`;
 }
 // الوضع النهاري
 function setLight(){
   nightMood.style.display="block";
   lightMood.style.display="none";
-  setNightMood.style.color="#353535";
-  setNightMood.style.background="#fff";
+  body.style.color="#353535";
+  body.style.background="#fff";
+  document.cookie = `theme=light; max-age=${12*30*24*60*60}; path=/`;
 }
 // السنة
 document.getElementById("year").innerHTML = new Date().getFullYear();
@@ -106,30 +107,50 @@ window.onload = function checkCookie() {
       audioBk.pause();
       }
   }
+  window.onload = function checkCookie() {
+    // window.location.reload(true);
+    
+        let theme = document.getElementById("body");
+        let currnetTheme = getCookie("theme");
+        if (currnetTheme == "night") {
+          nightMood.style.display="none";
+          lightMood.style.display="block";
+          body.style.color="#fff";
+          body.style.background="#353535";
+          document.cookie = `theme=night; max-age=${12*30*24*60*60}; path=/`;
+        } else {
+          nightMood.style.display="block";
+          lightMood.style.display="none";
+          body.style.color="#353535";
+          body.style.background="#fff";
+          document.cookie = `theme=light; max-age=${12*30*24*60*60}; path=/`;
+        }
+      }
+    
 // Disable right-click with an alert
 document.addEventListener('contextmenu', function(e) {
- // alert("تحذير: الموقع محمي بحقوق الملكية!");
-  e.preventDefault();
-});
-
-// Disable specific keyboard shortcuts
-document.onkeydown = function(e) {
-  if (e.keyCode == 123) { // Disable F12
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Disable Ctrl+Shift+I
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Disable Ctrl+Shift+C
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Disable Ctrl+Shift+J
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Disable Ctrl+U
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { // Disable Ctrl+S
-    return false;
-  }
-};
+  // alert("تحذير: الموقع محمي بحقوق الملكية!");
+   e.preventDefault();
+ });
+ 
+ // Disable specific keyboard shortcuts
+ document.onkeydown = function(e) {
+   if (e.keyCode == 123) { // Disable F12
+     return false;
+   }
+   if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Disable Ctrl+Shift+I
+     return false;
+   }
+   if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Disable Ctrl+Shift+C
+     return false;
+   }
+   if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Disable Ctrl+Shift+J
+     return false;
+   }
+   if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Disable Ctrl+U
+     return false;
+   }
+   if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { // Disable Ctrl+S
+     return false;
+   }
+ };
