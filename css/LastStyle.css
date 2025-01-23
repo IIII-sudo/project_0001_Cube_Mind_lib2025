@@ -7,6 +7,9 @@
         -ms-user-select: none;
         user-select: none;
       }
+      .nav{
+        padding-top: 30px;
+      }
       .navHeaderFontStyle{
         font-family: "El Messiri", serif;
         /*font-family: "Reem Kufi", serif;*/
@@ -28,12 +31,16 @@
         }
         .offcanavasEdit{
             --bs-border-width: 45px;
+            
         }
         .bar a{
             color:black;
         }
         .editNavbar{
             direction: rtl;
+            box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.75);
         }
         .offcanvas{
             --bs-offcanvas-border-color: var(--bs-border-color-translucent);
@@ -42,6 +49,9 @@
         .offcanvas-header{
         background-color:#353535!important;
         color: #fff;
+        box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.81);
+-webkit-box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.81);
+-moz-box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.81);
         }
         .btn-close{
         background-color:#fff!important;
@@ -88,8 +98,9 @@
         .textPragraph{
           visibility: visible;
           direction: rtl;          
-          padding: 10px;
-          margin: 1%;
+          padding: 30px;
+          margin: 40px;
+          font-size: 19px;
         }
         .table{
           direction: rtl !important;
@@ -133,7 +144,6 @@
           border-radius: 10px;
           font-size: 40px;
           color: #353535;
-
         }
         
       .topBtn{
@@ -178,6 +188,11 @@
       }
       .EditSave{
         width: 100%;
+      }
+      footer,.EditMainFooter{ 
+      box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.75);
+      -moz-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.75);
       }
       .iconsFooter> i, .iconsFooter> a{
         color: #fff;
@@ -255,4 +270,17 @@
     }
     .modal2{
       margin-top: 200px;
+    }
+    .joinWhatsupGroup{
+      background-color: #353535!important;
+      color: #fff!important;
+      text-align: center!important;
+      direction: rtl!important ;
+      text-decoration: none;
+    }
+    .headerAlertPragraph{
+      background-color:#353535;
+      color: #fff;
+      padding:10px 10px 10px 0px;
+      border-radius: 10px;
     }
