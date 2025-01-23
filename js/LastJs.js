@@ -106,3 +106,30 @@ window.onload = function checkCookie() {
       audioBk.pause();
       }
   }
+// Disable right-click with an alert
+document.addEventListener('contextmenu', function(e) {
+ // alert("تحذير: الموقع محمي بحقوق الملكية!");
+  e.preventDefault();
+});
+
+// Disable specific keyboard shortcuts
+document.onkeydown = function(e) {
+  if (e.keyCode == 123) { // Disable F12
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Disable Ctrl+Shift+I
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Disable Ctrl+Shift+C
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Disable Ctrl+Shift+J
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Disable Ctrl+U
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { // Disable Ctrl+S
+    return false;
+  }
+};

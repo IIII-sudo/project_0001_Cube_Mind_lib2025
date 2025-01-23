@@ -2,6 +2,10 @@
         font-family: "El Messiri", serif;
         font-optical-sizing: auto;
         font-style: normal;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
       .navHeaderFontStyle{
         font-family: "El Messiri", serif;
@@ -243,34 +247,3 @@
     .modal2{
       margin-top: 200px;
     }
-      /*
-      
-      .toast{
-        width: 50%;
-        direction: rtl;
-        position: fixed;
-        z-index: 99;
-        width: auto;
-        left: 5%;
-        top: 15%;
-        background-color: #35353554;
-      }
-      .toast-header{
-        width: 50%;
-
-        background-color: #35353571;
-        color: #fff;
-      padding: 20px;
-
-      }
-      .btn-close{
-        padding: 5px;
-        color: #fff;
-      }
-      .toastP{
-        padding: 20px;
-        width: 50%;
-
-      }
-      
-      */
