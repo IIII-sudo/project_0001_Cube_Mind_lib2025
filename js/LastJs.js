@@ -107,27 +107,7 @@ window.onload = function checkCookie() {
       audioBk.pause();
       }
   }
-  window.onload = function checkCookie() {
-    // window.location.reload(true);
-    
-        let theme = document.getElementById("body");
-        let currnetTheme = getCookie("theme");
-        if (currnetTheme == "night") {
-          nightMood.style.display="none";
-          lightMood.style.display="block";
-          body.style.color="#fff";
-          body.style.background="#353535";
-          document.cookie = `theme=night; max-age=${12*30*24*60*60}; path=/`;
-        } else {
-          nightMood.style.display="block";
-          lightMood.style.display="none";
-          body.style.color="#353535";
-          body.style.background="#fff";
-          document.cookie = `theme=light; max-age=${12*30*24*60*60}; path=/`;
-        }
-      }
-    
-// Disable right-click with an alert
+  // Disable right-click with an alert
 document.addEventListener('contextmenu', function(e) {
   // alert("تحذير: الموقع محمي بحقوق الملكية!");
    e.preventDefault();
