@@ -38,9 +38,9 @@
         }
         .editNavbar{
             direction: rtl;
-            box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.75);
-            -moz-box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.75);
+            box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.20);
+            -webkit-box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.20);
+            -moz-box-shadow: 2px 13px 27px -11px rgba(0,0,0,0.50);
         }
         .offcanvas{
             --bs-offcanvas-border-color: var(--bs-border-color-translucent);
@@ -49,9 +49,9 @@
         .offcanvas-header{
         background-color:#353535!important;
         color: #fff;
-        box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.81);
--webkit-box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.81);
--moz-box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.81);
+        box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.50);
+-webkit-box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.50);
+-moz-box-shadow: 2px 13px 27px -8px rgba(0,0,0,0.50);
         }
         .btn-close{
         background-color:#fff!important;
@@ -190,9 +190,9 @@
         width: 100%;
       }
       footer,.EditMainFooter{ 
-      box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.75);
-      -webkit-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.75);
-      -moz-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.75);
+      box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.50);
+      -webkit-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.50);
+      -moz-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.50);
       }
       .iconsFooter> i, .iconsFooter> a{
         color: #fff;
