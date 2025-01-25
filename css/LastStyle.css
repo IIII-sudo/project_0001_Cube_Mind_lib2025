@@ -328,3 +328,23 @@
       0%,100% { opacity: 0 }
       50% { opacity: 1 }
     }
+    .loginForm{
+      direction: rtl;
+      background-color: #353535;
+      color: #fff;
+      padding: 50px;
+    }
+    .loginBody{
+      background-color: #353535;
+    }
+    .loginBtn{
+      width: 100%;
+    }
+    .loginPragraph{
+      padding: 20px;
+    }
+    .loginLink{
+      text-decoration: none!important;
+      color: #fff;
+      font-size: large;
+    }
