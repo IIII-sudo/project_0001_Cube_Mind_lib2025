@@ -189,7 +189,7 @@
       .EditSave{
         width: 100%;
       }
-      footer,.EditMainFooter{ 
+      footer,.EditMainFooter, .iconsFooter,.alert{ 
       box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.50);
       -webkit-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.50);
       -moz-box-shadow: 1px -12px 27px -8px rgba(0,0,0,0.50);
@@ -283,4 +283,48 @@
       color: #fff;
       padding:10px 10px 10px 0px;
       border-radius: 10px;
+    }
+
+    
+
+    .content1 {
+      max-width: 650px;
+      margin: 0 auto;
+      top: 35%;
+      position: relative;
+      h1 {
+        line-height: 1.5;
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 0 2px 5px black;
+      }
+    }
+    
+    
+    /* PRELOADER CSS */
+    .page-loader{
+      overflow-y: hidden;
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      background: #353535;
+      margin: 0;
+      z-index: 10000;
+    }
+    
+    /* SPINNER ANIMATION */
+    .spinner {
+      position: relative;
+      top: 35%;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      animation: fade  2.0s infinite ease-in-out;
+    }
+    @keyframes fade {
+      0%,100% { opacity: 0 }
+      50% { opacity: 1 }
     }

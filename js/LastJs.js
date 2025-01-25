@@ -107,7 +107,7 @@ window.onload = function checkCookie() {
       audioBk.pause();
       }
   }
-  // Disable right-click with an alert
+/* // Disable right-click with an alert
 document.addEventListener('contextmenu', function(e) {
   // alert("تحذير: الموقع محمي بحقوق الملكية!");
    e.preventDefault();
@@ -133,4 +133,19 @@ document.addEventListener('contextmenu', function(e) {
    if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { // Disable Ctrl+S
      return false;
    }
- };
+ };*/
+
+$(window).on('load',function(){
+	setTimeout(function(){ // allowing 3 secs to fade out loader
+	$('.page-loader').fadeOut('slow');
+  $('html, body').css({
+    'overflow': 'auto',
+    'height': 'auto'
+  })
+	},3500);
+});
+
+ $('html, body').css({
+  'overflow': 'hidden',
+  'height': '100%'
+});
