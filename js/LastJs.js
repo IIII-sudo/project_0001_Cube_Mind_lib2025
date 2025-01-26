@@ -9,6 +9,12 @@ let lightMood = document.getElementById("setLight");
 let body = document.getElementById("body");
 let setNightMood = document.getElementById("setNightMood");
 let downloadModal = document.getElementById("exampleModal2");
+let pwd = document.getElementById("pwd");
+let usr = document.getElementById("usr");
+
+let spcUsr = document.getElementById("spc");
+
+
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -92,21 +98,31 @@ function setLight(){
 // السنة
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-window.onload = function checkCookie() {
-// window.location.reload(true);
 
+
+window.onload = function checkCookie() {
+  let spcUsrValue = getCookie("loginUsr");
+  if (spcUsrValue == "adminMohammadOdayNeen") {
+      spcUsr.style.display="block";
+  } 
+  else {
+   spcUsr.style.display="none";
+    }
+//موسيقى
     let audioBk = document.getElementById("audioBk");
     let musicValue = getCookie("audio");
     if (musicValue == "play") {
         setPause.style.display="none";
         setPlay.style.display="block";
         audioBk.play();
-    } else {
+    } 
+    else {
      setPause.style.display="block";
       setPlay.style.display="none";
       audioBk.pause();
       }
   }
+ 
 // Disable right-click with an alert
 document.addEventListener('contextmenu', function(e) {
   // alert("تحذير: الموقع محمي بحقوق الملكية!");
@@ -149,3 +165,23 @@ $(window).on('load',function(){
   'overflow': 'hidden',
   'height': '100%'
 });
+
+
+function getLogin(){
+let  x = pwd.value;
+let  y = usr.value;
+
+  if ((x === "admin") && (y === "admin")){
+    window.open('main.html', '_self');
+    document.cookie = `loginUsr=adminMohammadOdayNeen; max-age=${12*30*24*60*60}; path=/`;
+  }else if ((x === "admin2") && (y === "admin2")){
+    window.open('main.html', '_self');
+    document.cookie = `loginUsr=adminAndreiAbd; max-age=${12*30*24*60*60}; path=/`;
+  } else {
+    alert('إسم المستخدم أو كلمة المرور غير صحيحة');
+  }
+};
+function gestUser(){
+  window.open('main.html', '_self');
+  spcUsr.style.display='none';
+}

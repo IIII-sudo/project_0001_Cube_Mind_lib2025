@@ -7,6 +7,9 @@
         -ms-user-select: none;
         user-select: none;
       }
+      .exampleInputPassword1, .exampleInputEmail1{
+        direction: rtl;
+      }
       .nav{
         padding-top: 30px;
       }
@@ -302,7 +305,9 @@
       }
     }
     
-    
+    .form-control{
+      direction: ltr;
+    }
     /* PRELOADER CSS */
     .page-loader{
       overflow-y: hidden;
@@ -339,12 +344,12 @@
     }
     .loginBtn{
       width: 100%;
-    }
-    .loginPragraph{
-      padding: 20px;
-    }
+    } 
     .loginLink{
       text-decoration: none!important;
       color: #fff;
       font-size: large;
     }
+    /*#spc{
+      display: none;
+    }*/
