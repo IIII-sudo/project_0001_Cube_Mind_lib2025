@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../../../../../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../../../../../../../css/LastStyle.css" rel="stylesheet">
+    <script src="../../../../../../../js/jquery-1.12.1.min.js"></script>
     <script src="../../../../../../../js/fontAwesome.js"></script>
     <script src="../../../../../../../js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,9 @@
     <title>موسوعة الفن التشكيلي</title>
 </head>
 <body>
+  <div class="page-loader">
+    <img class="spinner" src="../../../../../../../icon/logo_symbole_2_eclopedia_of_fine_art.jpg.png" alt="موسوعة الفن التشكيلي">
+</div>
     <nav class="navbar navbarEdit fixed-top bg-body-tertiary editNavbar">
         <div class="container-fluid">
           <a class="navbar-brand">
@@ -65,9 +69,35 @@
       <div class="alert alert-light textPragraph" role="alert">
         <p>
           <h5 class="hLine">&#9668; التقانات:</h5>
-                    يضم هذا القسم الأدوات العلمية لأسس الفنون التشكيلية.
+          تقنيات الفنون التشكيلية تشمل مجموعة متنوعة من الأساليب التي تُستخدم في التعبير الفني، ومن بين هذه التقنيات نجد التشريح، اللون، التصميم، والترميم. إليك شرحًا لكل منها:
+         <br><br> <h6>&#9668; التشريح:</h6>
+          التشريح في الفنون التشكيلية يتعلق بفهم الهيكل الداخلي للأشكال، سواء كانت بشرية أو حيوانية أو نباتية. من خلال دراسة التشريح، يتمكن الفنانون من:
+          <br><br>
+          التعبير عن الحركة: فهم كيفية تحرك الجسم يساعد في رسمه بشكل واقعي. <br>
+          التفاصيل الدقيقة: يمكن للفنان تحسين المهارات في رسم العضلات والعظام، مما يزيد من دقة العمل الفني.
+          التجسيد الواقعي: يساعد في إنشاء تماثيل أو رسومات تعكس الواقع بدقة.
+         <br><br> <h6>&#9668; اللون:</h6>
+          اللون هو عنصر أساسي في الفنون التشكيلية، ويستخدم بطرق متعددة لتعزيز التعبير الفني:
+          <br><br>
+          نظرية الألوان: تشمل فهم الألوان الأساسية والثانوية، والتدرجات، والتباين. <br>
+          التأثير النفسي للألوان: يمكن أن تؤثر الألوان على مشاعر المشاهدين، مثل استخدام الأحمر للتعبير عن القوة أو الأزرق للهدوء. <br>
+          التباين والتنسيق: يلعب التباين بين الألوان دورًا هامًا في جذب الانتباه، بينما يساعد التنسيق في خلق توازن بصري.
+         <br><br> <h6>&#9668; التصميم:</h6>
+          التصميم هو عملية تنظيم العناصر الفنية بطريقة تعزز من الرسالة المراد إيصالها:
+          <br>
+          التوازن: يشمل توزيع العناصر بشكل متساوٍ للحصول على توازن بصري. <br>
+          التنظيم: يعتمد على استخدام المساحات الفارغة بشكل مدروس، مما يساعد في توجيه نظر المشاهد. <br>
+          التدفق: يُستخدم لتوجيه عين المشاهد من عنصر إلى آخر، مما يُعزز من تجربة المشاهدة.
+         <br><br> <h6>&#9668; الترميم:</h6>
+          الترميم هو عملية إعادة الحياة إلى الأعمال الفنية التالفة أو القديمة: <br>
+          
+          الحفاظ على التراث: يساهم في الحفاظ على الفنون التقليدية والتاريخية. <br>
+          التقنيات المستخدمة: تتضمن استخدام مواد خاصة لإصلاح الألوان، وإعادة بناء الأجزاء المفقودة. <br>
+          التقييم: يتطلب معرفة عميقة بالمواد الأصلية المستخدمة في العمل الفني لضمان عدم تغيير طابعه الأصلي. <br><br>
+          تتداخل هذه التقنيات وتكمل بعضها البعض، مما يسهم في تطوير الفنون التشكيلية وتعزيز قدرة الفنان على التعبير عن رؤاه وأفكاره.
         </p>
       </div>
+      <br><br><br><br><br>
       <br><br><br><br><br>
 <!-- المودال -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -598,7 +628,7 @@
                     <!---->
                   
                 </div>
-        </div>        </div> <div class="offcanvas-header">
+        </div>        </div> <div class="offcanvas-header EditMainFooter">
           <ul class="mainArFooter">
             <a href="#">
               <li>&#9668; من نحن</li>
@@ -612,7 +642,7 @@
           </ul>
         </div>
       </div>
-      <footer class="footerEdit fixed-bottom bg-body-tertiary">
+      <footer class="footerEdit fixed-bottom bg-body-tertiary ">
         <div class="footerEdit">
            <span id="year" onload="getFullYear"></span>  © جميع الحقوق محفوظة | موسوعة الفن التشكيلي
         </div>
