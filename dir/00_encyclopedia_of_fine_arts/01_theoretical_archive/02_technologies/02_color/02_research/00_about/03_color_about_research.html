@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../../../../../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../../../../../../../css/LastStyle.css" rel="stylesheet">
+    <script src="../../../../../../../js/jquery-1.12.1.min.js"></script>
     <script src="../../../../../../../js/fontAwesome.js"></script>
     <script src="../../../../../../../js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,9 @@
     <title>موسوعة الفن التشكيلي</title>
 </head>
 <body>
+  <div class="page-loader">
+    <img class="spinner" src="../../../../../../../icon/logo_symbole_2_eclopedia_of_fine_art.jpg.png" alt="موسوعة الفن التشكيلي">
+</div>
     <nav class="navbar navbarEdit fixed-top bg-body-tertiary editNavbar">
         <div class="container-fluid">
           <a class="navbar-brand">
@@ -65,10 +69,21 @@
       <div class="alert alert-light textPragraph" role="alert">
         <p>
           <h5 class="hLine">&#9668; قسم الأبحاث:</h5>
-           يختص قسم الأبحاث بالمعارف العلمية و رسائل الدراسات العليا لطلبة الفنون الجميلة، يتضمن هذا القسم أبحاث بلغات متعددة 
-          وزعت بحسب لغة البحث حسب القسم اللغوي الخاص بها في الموسوعة.
+          تُعتبر أبحاث اللون في الفن التشكيلي مجالًا غنيًا يستكشف العلاقة بين الألوان وتأثيرها على المشاهدين، بالإضافة إلى دورها في التعبير الفني. تعكس هذه الأبحاث تطور الفهم العلمي والفني للألوان وكيفية استخدامها بطرق إبداعية.
+          <br><br><h5 class="hLine">&#9668; نظرية الألوان:</h5>
+          تركز العديد من الأبحاث على نظرية الألوان، التي تدرس كيفية تفاعل الألوان مع بعضها. تشمل هذه النظرية الألوان الأساسية والثانوية، والعجلات اللونية، وكيفية مزج الألوان لإنشاء تدرجات جديدة. هذه المفاهيم تُساعد الفنانين في اختيار الألوان المناسبة لتحقيق التأثيرات المطلوبة.
+          <br><br><h5 class="hLine">&#9668; التأثير النفسي:</h5>
+تُظهر الأبحاث أن للألوان تأثيرات نفسية قوية على المشاهدين. على سبيل المثال، يُعتبر اللون الأحمر محفزًا للطاقة، بينما يُعبر الأزرق عن الهدوء والاسترخاء. تسعى الدراسات لفهم كيف يمكن للفنانين استخدام هذه التأثيرات لتوجيه المشاعر وتشكيل التجارب البصرية.
+          <br><br><h5 class="hLine">&#9668; التاريخ و الثقافة:</h5>
+تتناول بعض الأبحاث تاريخ استخدام الألوان في مختلف الثقافات والفترات الزمنية. يُظهر هذا البحث كيف أثرت العوامل الثقافية والاجتماعية على اختيار الألوان واستخدامها في الفنون. على سبيل المثال، كانت الألوان تُستخدم بشكل مختلف في الفنون الإسلامية مقارنةً بالفنون الأوروبية في العصور الوسطى.
+          <br><br><h5 class="hLine">&#9668; التقانات الفنية:</h5>
+          مع تقدم التكنولوجيا، ظهرت أبحاث جديدة تتناول استخدام الألوان في الوسائط الرقمية. تُحقق هذه الأبحاث في كيفية تأثير الألوان في التصميم الجرافيكي والفنون الرقمية، وكيف يمكن للفنانين الاستفادة من الأدوات الرقمية لتحقيق رؤاهم الفنية.
+          <br><br><h5 class="hLine">&#9668; خلاصة:</h5>
+          تُعتبر أبحاث اللون في الفن التشكيلي مجالًا متنوعًا يغطي جوانب نظرية ونفسية وثقافية. تساعد هذه الأبحاث الفنانين في فهم العمق والدلالات المرتبطة بالألوان، مما يساهم في تعزيز التعبير الفني وتحقيق تأثيرات بصرية مؤثرة.</p>
         </p>
-      </div>
+        </div>
+      <br><br><br><br><br>
+      <br><br><br><br><br>
       
 <!-- المودال -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -598,7 +613,7 @@
                       </ul>
                     <!---->
                   
-                </div>         </div>        </div> <div class="offcanvas-header">
+                </div>         </div>        </div> <div class="offcanvas-header EditMainFooter">
                   <ul class="mainArFooter">
                     <a href="#">
                       <li>&#9668; من نحن</li>
@@ -612,7 +627,7 @@
                   </ul>
                 </div>
               </div>
-              <footer class="footerEdit fixed-bottom bg-body-tertiary">
+              <footer class="footerEdit fixed-bottom bg-body-tertiary ">
                 <div class="footerEdit">
                    <span id="year" onload="getFullYear"></span>  © جميع الحقوق محفوظة | موسوعة الفن التشكيلي
                 </div>
