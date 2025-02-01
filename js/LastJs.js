@@ -11,10 +11,35 @@ let setNightMood = document.getElementById("setNightMood");
 let downloadModal = document.getElementById("exampleModal2");
 let pwd = document.getElementById("pwd");
 let usr = document.getElementById("usr");
+let logPopOnError = document.getElementById('');
 
-let spcUsr = document.getElementById("spc");
-
-
+let spcUsrx = document.getElementById('x');
+let spcUsrxx = document.getElementById('xx');
+let spcUsrxxx = document.getElementById('xxx');
+let spcUsrxxxx = document.getElementById('xxxx');
+let spcUsrxxxxx = document.getElementById('xxxxx');
+let spcUsrxxxxxx = document.getElementById('xxxxxx');
+let spcUsrxxxxxxx = document.getElementById('xxxxxxx');
+let spcUsrxxxxxxxx = document.getElementById('xxxxxxxx');
+let spcUsrxxxxxxxxx = document.getElementById('xxxxxxxxx');
+let spcUsrxxxxxxxxxx = document.getElementById('xxxxxxxxxx');
+let spcUsrxxxxxxxxxxx = document.getElementById('xxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxxxxxxxx');
+let spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxxx = document.getElementById('xxxxxxxxxxxxxxxxxxxxxxxxxxx');
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -101,13 +126,6 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
 window.onload = function checkCookie() {
-  let spcUsrValue = getCookie("loginUsr");
-  if (spcUsrValue == "adminMohammadOdayNeen") {
-      spcUsr.style.display="block";
-  } 
-  else {
-   spcUsr.style.display="none";
-    }
 //موسيقى
     let audioBk = document.getElementById("audioBk");
     let musicValue = getCookie("audio");
@@ -121,6 +139,95 @@ window.onload = function checkCookie() {
       setPlay.style.display="none";
       audioBk.pause();
       }
+
+      let spcUsrValue = getCookie("loginUsr");
+      if (spcUsrValue == "adminMohammadOdayNeen") {
+        spcUsrx.style.display="block";
+        spcUsrxx.style.display="block";
+        spcUsrxxx.style.display="block";
+        spcUsrxxxx.style.display="block";
+        spcUsrxxxxx.style.display="block";
+        spcUsrxxxxxx.style.display="block";
+        spcUsrxxxxxxx.style.display="block";
+        spcUsrxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="block";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="block";
+      } 
+      else if (spcUsrValue == "randome") {
+        spcUsrx.style.display="none";
+        spcUsrxx.style.display="none";
+        spcUsrxxx.style.display="none";
+        spcUsrxxxx.style.display="none";
+        spcUsrxxxxx.style.display="none";
+        spcUsrxxxxxx.style.display="none";
+        spcUsrxxxxxxx.style.display="none";
+        spcUsrxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        
+        } else {
+          spcUsrx.style.display="none";
+          spcUsrxx.style.display="none";
+          spcUsrxxx.style.display="none";
+          spcUsrxxxx.style.display="none";
+          spcUsrxxxxx.style.display="none";
+          spcUsrxxxxxx.style.display="none";
+          spcUsrxxxxxxx.style.display="none";
+          spcUsrxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        }
   }
  
 // Disable right-click with an alert
@@ -178,10 +285,10 @@ let  y = usr.value;
     window.open('main.html', '_self');
     document.cookie = `loginUsr=adminAndreiAbd; max-age=${12*30*24*60*60}; path=/`;
   } else {
-    alert('إسم المستخدم أو كلمة المرور غير صحيحة');
+    logPopOnError.style.display='block';
   }
 };
 function gestUser(){
+  document.cookie = `loginUsr=randome; max-age=${12*30*24*60*60}; path=/`;
   window.open('main.html', '_self');
-  spcUsr.style.display='none';
 }
