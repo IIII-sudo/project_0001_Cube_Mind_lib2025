@@ -12,7 +12,7 @@ let downloadModal = document.getElementById("exampleModal2");
 let pwd = document.getElementById("pwd");
 let usr = document.getElementById("usr");
 let logPopOnError = document.getElementById('');
-
+let errorMSG = document.getElementById('errorMSG')
 let spcUsrx = document.getElementById('x');
 let spcUsrxx = document.getElementById('xx');
 let spcUsrxxx = document.getElementById('xxx');
@@ -285,8 +285,13 @@ let  y = usr.value;
     window.open('main.html', '_self');
     document.cookie = `loginUsr=adminAndreiAbd; max-age=${12*30*24*60*60}; path=/`;
   } else {
-    logPopOnError.style.display='block';
-  }
+    document.cookie = `loginFeild=x; max-age=${12*30*24*60*60}; path=/`;
+    errorMSG.innerHTML = `<br><div class="alert alert-danger" role="alert">اسم المستخدم أو كلمة المرور غير صحيحة</div>`
+    setTimeout(function() {
+      errorMSG.innerHTML = ``;
+  }, 1500);
+  } 
+
 };
 function gestUser(){
   document.cookie = `loginUsr=randome; max-age=${12*30*24*60*60}; path=/`;
