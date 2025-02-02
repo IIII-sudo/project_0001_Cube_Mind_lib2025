@@ -278,7 +278,7 @@ function getLogin(){
 let  x = pwd.value;
 let  y = usr.value;
 
-  if ((x = "mod1@admin.com") && (y = "admin2025")){
+  if ((x == "mod@admin") && (y == "mod@admin")){
     window.open('main.html', '_self');
     document.cookie = `loginUsr=adminMohammadOdayNeen; max-age=${12*30*24*60*60}; path=/`;
   } else {
