@@ -278,12 +278,9 @@ function getLogin(){
 let  x = pwd.value;
 let  y = usr.value;
 
-  if ((x === "admin") && (y === "admin")){
+  if ((x = "mod1@admin.com") && (y = "admin2025")){
     window.open('main.html', '_self');
     document.cookie = `loginUsr=adminMohammadOdayNeen; max-age=${12*30*24*60*60}; path=/`;
-  }else if ((x === "admin2") && (y === "admin2")){
-    window.open('main.html', '_self');
-    document.cookie = `loginUsr=adminAndreiAbd; max-age=${12*30*24*60*60}; path=/`;
   } else {
     document.cookie = `loginFeild=x; max-age=${12*30*24*60*60}; path=/`;
     errorMSG.innerHTML = `<br><div class="alert alert-danger" role="alert">اسم المستخدم أو كلمة المرور غير صحيحة</div>`
