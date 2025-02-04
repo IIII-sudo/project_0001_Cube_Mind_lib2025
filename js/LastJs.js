@@ -265,7 +265,7 @@ $(window).on('load',function(){
     'overflow': 'auto',
     'height': 'auto'
   })
-	},3500);
+	},1000);
 });
 
  $('html, body').css({
