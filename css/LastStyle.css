@@ -350,6 +350,16 @@
       color: #fff;
       font-size: large;
     }
+    .linkSocialMedia> i,.linkSocialMedia> a{
+      color: #353535;
+      padding: 7px;
+      font-size: x-large;
+      text-decoration: none;
+      text-align: center;
+    }
+    .linkSocialMedia{
+      text-align: center;
+    }
     /*#x{
       display: none;
     }*/
