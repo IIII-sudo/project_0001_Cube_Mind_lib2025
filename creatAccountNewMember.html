@@ -15,10 +15,10 @@
     <link rel="icon" href="icon/logo_symbole_2_eclopedia_of_fine_art.jpg.png" type="image/icon type">
     <title>موسوعة الفن التشكيلي</title>
 </head>
-<div class="page-loader">
+<body id="body" class="loginBody">
+  <div class="page-loader">
     <img class="spinner" src="icon/logo_symbole_2_eclopedia_of_fine_art.jpg.png" alt="موسوعة الفن التشكيلي">
 </div>
-<body id="body" class="loginBody">
     <nav class="navbar navbarEdit fixed-top bg-body-tertiary editNavbar" id="setNightMood">
         <div class="container-fluid">
           <a class="navbar-brand">
@@ -32,30 +32,35 @@
 
       <div class="loginForm">
         <div class="mb-3">
-            <h5 class="hLine">&#9666; تسجيل الدخول:</h5><br>
-          <label for="exampleInputEmail1" class="form-label">اسم المستخدم</label>
-          <input  name="text" id="usr" value=""  class="form-control" aria-describedby="emailHelp" required>
+            <h5 class="hLine">&#9666; تسجيل حساب:</h5><br>
+          <label for="exampleInputEmail1" class="form-label">الإسم الكامل:</label>
+          <input type="text" name="getfullname" id="getfullname" value=""  class="form-control" aria-describedby="emailHelp" required>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">كلمة المرور</label>
-          <input type="password" value="" name="pwd" id="pwd" class="form-control" required>
+          <label for="exampleInputPassword1" class="form-label">المواليد:</label>
+          <input type="date" value="" name="birth" id="birth" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-secondary loginBtn" onclick="getLogin()">
-          <a class="loginLink">تسجيل الدخول</a>
-        </button>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">التحصيل العلمي:</label>
+          <input type="text" value="" name="sertifcat" id="sertifcat" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">رقم الهاتف:</label>
+          <input type="tel" value="" name="phoneNumber" id="phoneNumber" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">البريد الإلكتروني:</label>
+          <input type="email" value="" name="mailUsr" id="mailUsr" class="form-control" required>
+        </div>
        <div id="errorMSG"></div>
-        <li style="padding: 20px;">
-          <a class="linkLoginStyle" href="creatAccountNewMember.html">إنشاء حساب</a>
-        </li>
-       <br><br>
-            <div class="loginPragraph">
-              <h5 class="hLine">&#9666; لا تملك حساب!</h5>
-              <p >بإستطاعة الجميع زيارة و تصفح محتويات الموسوعة بصفة زائر.</p>
-        </div>
-        <button type="submit" class="btn btn-secondary loginBtn" onclick="gestUser()">
-            <a class="loginLink">المتابعة كزائر</a>
+        <button type="submit" class="btn btn-secondary loginBtn" onclick="getSignUp()">
+          <a class="loginLink">إرسال</a>
         </button>
-            </div>
+        <br><br>
+        <button type="submit" class="btn btn-secondary loginBtn" onclick="getOut()">
+          <a class="loginLink">إلغاء</a>
+        </button> 
+      </div>
           </div>      
 
 <br><br><br><br><br>

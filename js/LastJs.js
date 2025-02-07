@@ -11,8 +11,13 @@ let setNightMood = document.getElementById("setNightMood");
 let downloadModal = document.getElementById("exampleModal2");
 let pwd = document.getElementById("pwd");
 let usr = document.getElementById("usr");
+let getname = document.getElementById('getfullname');
+let getbirth = document.getElementById('birth');
+let getsertifcat = document.getElementById('sertifcat');
+let getphone = document.getElementById('phoneNumber');
+let getmail = document.getElementById('mailUsr');
 let logPopOnError = document.getElementById('');
-let errorMSG = document.getElementById('errorMSG')
+let errorMSG = document.getElementById('errorMSG');
 let spcUsrx = document.getElementById('x');
 let spcUsrxx = document.getElementById('xx');
 let spcUsrxxx = document.getElementById('xxx');
@@ -293,4 +298,25 @@ let  y = usr.value;
 function gestUser(){
   document.cookie = `loginUsr=randome; max-age=${12*30*24*60*60}; path=/`;
   window.open('main.html', '_self');
+}
+
+function getOut(){
+  document.cookie = `loginUsr=randome; max-age=${12*30*24*60*60}; path=/`;
+  window.open('index.html', '_self');
+}
+function getSignUp(){
+  let u1 = getname.value;
+  let u2 = getbirth.value;
+  let u3 = getsertifcat.value;
+  let u4 = getphone.value;
+  let u5 = getmail.value;
+  if ((u1 != "") && (u2 != "") && (u3 != "") && (u4 != "") && (u5 != "")){
+    window.open('https://wa.me/+963958961441?text=  مرحبا أستاذ محمد عدي نين أود تقديم طلب تسجيل: '+'|| الإسم الكامل: '+u1+'  ||  '+'|| المواليد: '+u2+'  ||  '+'|| التحصيل العلمي: '+u3+'  ||  '+'|| رقم الهاتف: '+u4+'  ||  '+'|| البريد الإلكتروني: '+u5+'  ||  '+'شكراً لكم!ّ', '_self');
+  } else {
+    document.cookie = `loginFeild=x; max-age=${12*30*24*60*60}; path=/`;
+    errorMSG.innerHTML = `<br><div class="alert alert-danger" role="alert">من فضلك قم بملئ جميع الحقول المطلوبة.</div>`
+    setTimeout(function() {
+      errorMSG.innerHTML = ``;
+  }, 3500);
+  } 
 }

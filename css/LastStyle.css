@@ -360,6 +360,10 @@
     .linkSocialMedia{
       text-align: center;
     }
+    .linkLoginStyle{
+      color: #fff;
+      padding: 20px;
+    }
     /*#x{
       display: none;
     }*/
