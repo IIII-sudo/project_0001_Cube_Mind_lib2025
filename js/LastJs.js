@@ -4,8 +4,7 @@ let mybutton = document.getElementById("myBtn");
 let setPause = document.getElementById("setPause");
 let setPlay = document.getElementById("setPlay");
 let audioBk = document.getElementById("audioBk");
-let nightMood = document.getElementById("setNight");
-let lightMood = document.getElementById("setLight");
+let logOut = document.getElementById("logOffEnyclopedia");
 let body = document.getElementById("body");
 let setNightMood = document.getElementById("setNightMood");
 let downloadModal = document.getElementById("exampleModal2");
@@ -311,7 +310,7 @@ function getSignUp(){
   let u4 = getphone.value;
   let u5 = getmail.value;
   if ((u1 != "") && (u2 != "") && (u3 != "") && (u4 != "") && (u5 != "")){
-    window.open('https://wa.me/+963958961441?text=  مرحبا أستاذ محمد عدي نين أود تقديم طلب تسجيل: '+'|| الإسم الكامل: '+u1+'  ||  '+'|| المواليد: '+u2+'  ||  '+'|| التحصيل العلمي: '+u3+'  ||  '+'|| رقم الهاتف: '+u4+'  ||  '+'|| البريد الإلكتروني: '+u5+'  ||  '+'شكراً لكم!ّ', '_self');
+    window.open('https://wa.me/+963958961441?text=  مرحباً استاذ محمد عدي نين، أود أن أتقدم بطلب تسجيل في منصة - موسوعة الفن التشكيلي - وفق البيانات:'+'%0a%0aالإسم الكامل:   '+'%0a'+u1+'%0a%0a المواليد:   '+'%0a'+u2+'%0a%0aالتحصيل العلمي:   '+'%0a'+u3+'%0a%0aرقم الهاتف:   '+'%0a'+u4+'%0a%0aالبريد الإلكتروني: '+'%0a'+u5, '_self');
   } else {
     document.cookie = `loginFeild=x; max-age=${12*30*24*60*60}; path=/`;
     errorMSG.innerHTML = `<br><div class="alert alert-danger" role="alert">من فضلك قم بملئ جميع الحقول المطلوبة.</div>`
@@ -319,4 +318,8 @@ function getSignUp(){
       errorMSG.innerHTML = ``;
   }, 3500);
   } 
+}
+function logOff(){
+  document.cookie = `loginUsr=; max-age=${12*30*24*60*60}; path=/`;
+  window.open('index.html', '_self');
 }
