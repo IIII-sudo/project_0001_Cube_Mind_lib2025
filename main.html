@@ -148,21 +148,22 @@
           <br><br>
             <h5 class="hLine"><strong>&#9666; كيف يمكنك المساهمة؟:</strong></h5> 
             يمكنك التبرع بسهولة من خلال محفظتك الإلكترونية. كل تبرع، صغيرًا كان أم كبيرًا، يُحدث فرقًا ويعزز من قدرتنا على تقديم المزيد من الفعاليات والمشاريع الفنية. <br><br>
-          <h5 class="hLine"><strong>&#9666; للتبرع، اتبع الخطوات التالية:</strong></h5>
-          
-          نسمح باستخدام بعض المحتويات لأغراض التعليم أو البحث، وفقًا لمبدأ
-           الاستخدام العادل. يجب أن يتم الاقتباس بشكل مناسب مع الإشارة إلى المصدر. <br><br>
+          <h5 class="hLine"><strong>&#9666; للتبرع، اتبع الخطوات التالية:</strong></h5><br>
            <h6><strong>&#9666; اختر خيار "تحويل الأموال" أو "تبرع".</strong></h6>
            <h6><strong>&#9666; افتح تطبيق المحفظة الإلكترونية الخاص بك.</strong></h6>
-           <h6><strong>&#9666; أدخل الرقم أو اسم المستخدم الخاص بالمنصة.</strong></h6>
+           <h6><strong>&#9666; إضغط على الزر في الأسفل لنسخ رقم المحفظة.</strong></h6>
+          <div style="padding-right: 20px;margin: 20px;">
+             <button style="font-size: large;" class="btn btn-secondary" id="copiedID" onclick="copyLinkWallet()">Trust Walet</button>
+          </div>
+           <input style="display: none;" type="text" id="walletID" value="0xf21FBAa1893C663C7656315F98D37FAb472D9184">
            <h6><strong>&#9666; حدد المبلغ الذي ترغب في التبرع به.</strong></h6>
            <h6><strong>&#9666; اضغط على "إرسال" أو "تأكيد".</strong></h6>
            شكرًا لك على دعمك! <br>
            معًا، نستطيع تعزيز الفن التشكيلي وإلهام المزيد من الأفراد. 
         </p>
       </div>
-      <br><br><br><br><br>      <br><br><br><br><br>
-
+      <br><br><br><br><br>
+      <br><br><br><br><br>
 <!-- المودال -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -186,7 +187,7 @@
           <p class="hLine">&#9666; تسجيل الخروج:</p>
             <li>
               <button class="btn btn-secondary" id="logOffEnyclopedia" onclick="logOff()">
-                <a style="text-decoration: none;color: #353535;">الخروج</a>
+               <i class="fa-solid fa-power-off"></i>
               </button>
             </li>
         </ul>

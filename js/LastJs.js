@@ -234,33 +234,7 @@ window.onload = function checkCookie() {
         }
   }
  
-// Disable right-click with an alert
-document.addEventListener('contextmenu', function(e) {
-  // alert("تحذير: الموقع محمي بحقوق الملكية!");
-   e.preventDefault();
- });
- 
- // Disable specific keyboard shortcuts
- document.onkeydown = function(e) {
-   if (e.keyCode == 123) { // Disable F12
-     return false;
-   }
-   if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Disable Ctrl+Shift+I
-     return false;
-   }
-   if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Disable Ctrl+Shift+C
-     return false;
-   }
-   if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Disable Ctrl+Shift+J
-     return false;
-   }
-   if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Disable Ctrl+U
-     return false;
-   }
-   if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { // Disable Ctrl+S
-     return false;
-   }
- };
+
 
 $(window).on('load',function(){
 	setTimeout(function(){ // allowing 3 secs to fade out loader
@@ -323,3 +297,45 @@ function logOff(){
   document.cookie = `loginUsr=; max-age=${12*30*24*60*60}; path=/`;
   window.open('index.html', '_self');
 }
+function copyLinkWallet() {
+  // Get the text field
+  let copyText = document.getElementById("walletID");
+  let copiedID = document.getElementById('copiedID');
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  copiedID.innerHTML = `<button class="btn btn-secondary">تم نسخ رابط المحفظة</button>`
+}
+
+// Disable right-click with an alert
+document.addEventListener('contextmenu', function(e) {
+  // alert("تحذير: الموقع محمي بحقوق الملكية!");
+   e.preventDefault();
+ });
+ 
+ // Disable specific keyboard shortcuts
+ document.onkeydown = function(e) {
+   if (e.keyCode == 123) { // Disable F12
+     return false;
+   }
+   if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Disable Ctrl+Shift+I
+     return false;
+   }
+   if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Disable Ctrl+Shift+C
+     return false;
+   }
+   if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Disable Ctrl+Shift+J
+     return false;
+   }
+   if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Disable Ctrl+U
+     return false;
+   }
+   if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { // Disable Ctrl+S
+     return false;
+   }
+ };

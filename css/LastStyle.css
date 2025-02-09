@@ -364,6 +364,6 @@
       color: #fff;
       padding: 20px;
     }
-    /*#x{
-      display: none;
-    }*/
+    .modal-backdrop{
+      background-color: #fff;
+    }
