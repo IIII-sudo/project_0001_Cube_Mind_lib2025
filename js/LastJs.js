@@ -295,7 +295,6 @@ function getSignUp(){
 }
 function logOff(){
   document.cookie = `loginUsr=; max-age=${12*30*24*60*60}; path=/`;
-  window.open('index.html', '_self');
 }
 function copyLinkWallet() {
   // Get the text field
