@@ -367,3 +367,6 @@
     .modal-backdrop{
       background-color: #fff;
     }
+    #CtlLog2{
+      display: none;
+    }

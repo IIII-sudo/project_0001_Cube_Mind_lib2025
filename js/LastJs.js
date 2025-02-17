@@ -17,6 +17,8 @@ let getphone = document.getElementById('phoneNumber');
 let getmail = document.getElementById('mailUsr');
 let logPopOnError = document.getElementById('');
 let errorMSG = document.getElementById('errorMSG');
+let CtlLog = document.getElementById('CtlLog');
+let CtlLog2 = document.getElementById('CtlLog2');
 let spcUsrx = document.getElementById('x');
 let spcUsrxx = document.getElementById('xx');
 let spcUsrxxx = document.getElementById('xxx');
@@ -203,7 +205,38 @@ window.onload = function checkCookie() {
         spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
         spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
         
-        } else {
+        } else if (spcUsrValue = "err"){
+          // CtlLog.style.display='none';
+          // CtlLog2.style.display='block';
+          spcUsrx.style.display="none";
+          spcUsrxx.style.display="none";
+          spcUsrxxx.style.display="none";
+          spcUsrxxxx.style.display="none";
+          spcUsrxxxxx.style.display="none";
+          spcUsrxxxxxx.style.display="none";
+          spcUsrxxxxxxx.style.display="none";
+          spcUsrxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+          spcUsrxxxxxxxxxxxxxxxxxxxxxxxxxxx.style.display="none";
+        }
+         else {
           spcUsrx.style.display="none";
           spcUsrxx.style.display="none";
           spcUsrxxx.style.display="none";
@@ -252,15 +285,45 @@ $(window).on('load',function(){
 });
 
 
+var i = 0;
+
 function getLogin(){
-let  x = pwd.value;
-let  y = usr.value;
+  let  x = pwd.value;
+  let  y = usr.value;
 
   if ((x == "mod@admin") && (y == "mod@admin")){
     window.open('main.html', '_self');
     document.cookie = `loginUsr=adminMohammadOdayNeen; max-age=${12*30*24*60*60}; path=/`;
   } else {
-    document.cookie = `loginFeild=x; max-age=${12*30*24*60*60}; path=/`;
+    i ++;
+    if (i == 4){
+      
+      document.cookie = `loginUsr=err; max-age=${12*30*24*60*60}; path=/`;
+      CtlLog.style.display='none';
+      CtlLog2.style.display='block';
+
+
+      let countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+      let timerx = setInterval(function() {
+      let now = new Date().getTime();
+      let distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      //var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      //var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("demo").innerHTML = seconds + "s ";
+
+      if (distance = 0) {
+        clearInterval(timerx);
+        CtlLog.style.display='block';
+        CtlLog2.style.display='none';
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+}, 1000);
+    }
     errorMSG.innerHTML = `<br><div class="alert alert-danger" role="alert">اسم المستخدم أو كلمة المرور غير صحيحة</div>`
     setTimeout(function() {
       errorMSG.innerHTML = ``;
